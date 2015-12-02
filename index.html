@@ -20,7 +20,9 @@
         console.log('colorIdx is: ' + colorIdx);
         $('body').css('background-color', colors[colorIdx]);
         colorIdx++;
-        // Hmm there is something I forgot to do....
+        if (colorIdx === 6){
+          colorIdx = 0;
+        }
       });
     </script>
   </body>
