@@ -13,14 +13,14 @@
         'green',
         'blue',
         'indigo',
-        'violet'
+        'violet',
       ];
       var colorIdx = 0;
       $('button').click(function() {
         console.log('colorIdx is: ' + colorIdx);
         $('body').css('background-color', colors[colorIdx]);
         colorIdx++;
-        if (colorIdx === 6){
+        if (colorIdx === 7){
           colorIdx = 0;
         }
       });
