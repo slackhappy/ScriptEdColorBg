@@ -15,13 +15,15 @@
         'indigo',
         'violet'
       ];
+      
       var colorIdx = 0;
       $('button').click(function() {
         console.log('colorIdx is: ' + colorIdx);
         $('body').css('background-color', colors[colorIdx]);
-        colorIdx++;
-        // Hmm there is something I forgot to do....
-      });
+        if(colorIdx < colors.length - 1){colorIdx++}
+        else {colorIdx = 0;}
+        });
+      
     </script>
   </body>
 </html>
