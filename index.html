@@ -16,10 +16,15 @@
         'violet'
       ];
       var colorIdx = 0;
+      var forward = true;
+      var backwards = false;
       $('button').click(function() {
         console.log('colorIdx is: ' + colorIdx);
         $('body').css('background-color', colors[colorIdx]);
         colorIdx++;
+      if(colorIdx = 6){
+        forward = colorIdx
+      }  
         // Hmm there is something I forgot to do....
       });
     </script>
